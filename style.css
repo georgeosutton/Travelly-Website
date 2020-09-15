@@ -1,0 +1,319 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 1s ease-in-out;
+}
+
+button:hover {
+  background: #131c27;
+}
+
+/* Nav Section with HERO */
+
+.main-head {
+  background: #131c27;
+  color: white;
+}
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  padding: 1rem;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  font-size: 2.6rem;
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+
+.hero {
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/imgs/landing-page.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* Locations Section */
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/imgs/new-york-page.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  margin: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5;
+}
+
+.locations-head h3 {
+  margin: 1rem 0rem;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  animation: cloudAnimation 5s infinite alternate ease-in-out;
+  pointer-events: none;
+}
+
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Benefits */
+
+#benefits {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.benefits-head {
+  background: #131c27;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  text-align: center;
+  height: 30rem;
+  margin: 2rem 2rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 20%;
+  height: 5rem;
+  margin: 2rem;
+}
+
+.card h4,
+.card p {
+  padding: 1rem;
+}
+
+.card-icon {
+  background: #131c27;
+}
+
+/* Form */
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/imgs/contact-mountain.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 90%;
+  color: white;
+  border-radius: 20px;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 70px max-content;
+  align-items: center;
+}
+#message-label {
+  width: 70%;
+}
+#message {
+  width: 70%;
+  height: 18rem;
+  border: 3px solid #cccccc;
+}
+.name-email-wrapper {
+  display: flex;
+  margin: 0px 15% 0px 15%;
+}
+.message-form {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-radius: 0 0 20px 20px;
+}
+
+.form-wrapper input {
+  padding: 1rem 1rem;
+}
+
+/* Footer */
+
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Query */
+@media screen and (max-width: 930px) {
+  .cloud {
+    height: 40rem;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+
+  .moving-cloud-2 {
+    z-index: -2;
+    top: 10%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .cards {
+    grid-template-columns: 0.75fr;
+  }
+}
