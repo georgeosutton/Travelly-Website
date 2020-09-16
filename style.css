@@ -248,6 +248,7 @@ nav ul {
 .name-email-wrapper {
   display: flex;
   margin: 0px 15% 0px 15%;
+  flex-wrap: wrap;
 }
 .message-form {
   display: flex;
