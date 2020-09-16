@@ -235,7 +235,7 @@ nav ul {
 .email-form {
   padding: 1rem;
   display: grid;
-  grid-template-columns: 70px max-content;
+  grid-template-columns: 70px 30rem;
   align-items: center;
 }
 #message-label {
@@ -248,7 +248,8 @@ nav ul {
 }
 .name-email-wrapper {
   display: flex;
-  margin: 0px 15% 0px 15%;
+  margin: auto;
+  width: 70%;
   flex-wrap: wrap;
 }
 .message-form {
@@ -294,12 +295,16 @@ footer {
   }
   input,
   textarea {
-    width: 90%;
     font-size: 1.8rem;
   }
 
   html {
     font-size: 50%;
+  }
+
+  .name-form,
+  .email-form {
+    grid-template-columns: 70px 20rem;
   }
 
   .moving-cloud-1 {
@@ -322,5 +327,12 @@ footer {
 @media screen and (max-width: 750px) {
   .cards {
     grid-template-columns: 0.75fr;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .name-form,
+  .email-form {
+    grid-template-columns: 70px 16rem;
   }
 }
